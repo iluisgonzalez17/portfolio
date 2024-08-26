@@ -1,0 +1,41 @@
+---
+import './header.css';
+const { origin } = Astro.props;
+import Logo from '../Logo.astro';
+
+const mainMenu = [
+	 {link:"#Technologies", content:"Tecnologías", icon:"octicon:dependabot-24"},
+     {link:"#Projects", content:"Proyectos", icon:"octicon:rocket-24"},
+	 {link:"#Expereince", content:"Experiencia", icon:"octicon:briefcase-24"},
+     //{link:"/#personal", content:"Personal", icon:"octicon:light-bulb-24"}
+]
+---
+
+
+<header class="header">
+	<div class="header__container">
+		<Logo name="Luis González"/>
+		<nav class="links"   tabindex="0.1">
+			<button class="menu__btn" >Menú</button>
+			<ul class="header__list">
+				{
+					mainMenu.map((data) => (
+						<li>
+							<a class="menu__link" href={data.link}>
+								<span class="icon__container" >
+									<iconify-icon
+										class="icons"
+										icon={data.icon}
+										width="20"
+										height="20"
+									/>
+									{data.content}
+								</span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</nav>
+	</div>
+</header>
