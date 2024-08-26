@@ -6,7 +6,7 @@ const {name} = Astro.props;
     <div class="img__container">
         <img
             class="header__img"
-            src="/img/luisgonz-logo.png"
+            src="/img/luisgonz-logo.svg"
             alt="luisgonz-img"
             width="100px"
             height="100px"
@@ -34,4 +34,12 @@ const {name} = Astro.props;
 	border-radius: 50%;
 	align-items: center;
 }
+
+@media screen and (max-width: 768px) { 
+    .header__title {
+        display: none;
+    }
+}
+
+
 </style>
