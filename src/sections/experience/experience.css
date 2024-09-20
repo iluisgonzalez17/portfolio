@@ -63,6 +63,12 @@
 	max-width: 80%;
 }
 
+ul.experience {
+	list-style: disc !important;
+    margin: 16px 0px !important; 
+    padding: 0 0 0 40px !important;
+}
+
 @media screen and (max-width: 768px) {
 	.hero {
 		padding: 12rem 0 5rem 0;

@@ -1,5 +1,6 @@
 ---
 import './projects.css';
+import Card from '../../components/card.astro';
 //import Boton from '../atoms/Boton.astro';
 ---
 
@@ -7,8 +8,13 @@ import './projects.css';
   <div class="ml-auto mr-auto mt-8 mb-8 flex justify-center items-center">
     <div class="w-3/4 sm:w-1/2">
       <h1 class="text-4xl">Proyectos</h1>
-      <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
-        
+      <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24  overflow-auto scroll-smoot">
+        <div class="grid grid-flow-row md:grid-flow-col gap-4" style="min-height: 700px;">
+          <Card class="col-span-3" />  
+          <Card class="col-span-3"/>
+          <Card class="col-span-3"/>
+          <Card class="col-span-3"/>
+        </div>
       </div>
     </div>
   </div>
