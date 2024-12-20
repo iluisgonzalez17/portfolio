@@ -1,0 +1,145 @@
+---
+import './experience.css';
+//import Boton from '../atoms/Boton.astro';
+---
+
+<section id="Experience" class="experience">
+  <div class="mx-auto mt-8 mb-8 flex justify-center items-center">
+    <div class="w-full ">
+      <h1 class="text-3xl lg:text-4xl text-center font-bold mb-6">Experience</h1>
+      <div class="container bg-gray-200 mx-auto w-full h-full">
+        <div class="relative wrap overflow-hidden p-5 lg:p-10 h-full">
+          <!-- Línea central -->
+          <div class="absolute border-opacity-20 border-gray-700 border-2 h-full z-10" style="left: 50%; transform: translateX(-50%);"></div>
+
+          <!-- Timeline - Secciones -->
+           
+          <!-- Ejemplo de repetición para cada sección -->
+          <div class="mb-8 flex flex-col md:flex-row justify-between items-center w-full">
+            <!-- Espacio vacío en dispositivos grandes -->
+            <div class="order-1 w-0 md:w-5/12"></div>
+
+            <!-- Punto de la línea -->
+            <div class="z-10 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full"></div>
+
+            <!-- Contenido -->
+            <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 relative bg-white z-20" >
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <!-- Imagen -->
+                <div class="flex justify-center">
+                 <img class="w-20 md:w-36 max-w-full" src="/assets/softec-logo.webp" alt="Softec Innovation">
+               </div>
+               <!-- Información de texto -->
+               <div class="flex flex-col items-center md:items-start">
+                  <h2 class="mb-3 font-bold text-black text-xl">SOFTEC INNOVATION</h2>
+                  <h5 class="font-bold text-gray-600">01/2024 - Present</h5>
+                  <h5 class="mb-3 font-bold text-gray-600">SENIOR DEVELOPER</h5>
+               </div>
+             </div>
+              <ul class="list-disc pl-5">
+                <li>Capturing requirements with the client about new projects.</li>
+                <li>Documentation on the different updates and changes within the projects.</li>
+                <li>Code Review.</li>
+                <li>Development of Landing Pages aimed at clients of different companies with Angular, and maintenance and optimization of functions and styles in web applications.</li>
+                <li>Development of API endpoints with NodeExpress.</li>
+                <li>Incidents resolution.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Alternar contenido a la izquierda -->
+          <div class="mb-8 flex flex-col md:flex-row-reverse justify-between items-center w-full">
+            <!-- Línea de la línea de tiempo (en blanco para dispositivos pequeños) -->
+            <div class="order-1 w-0 md:w-5/12"></div>
+          
+            <!-- Punto negro de la línea de tiempo -->
+            <div class="z-10 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full"></div>
+          
+            <!-- Contenido de la tarjeta -->
+            <div class="order-1 bg-black rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 z-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+
+                 <!-- Imagen -->
+                 <div class="flex justify-center ">
+                  <img class="w-20 md:w-36 max-w-full" src="/assets/diatomea-logo.webp" alt="Diatomea Technology">
+                </div>
+                <!-- Información de texto -->
+                <div class="flex flex-col items-center md:items-start">
+                  <h2 class="mb-3 font-bold text-white text-xl">DIATOMEA TECHNOLOGY</h2>
+                  <h5 class="font-bold text-white">02/2022 - 01/2024</h5>
+                  <h5 class="mb-3 font-bold text-white">FULLSTACK DEVELOPER</h5>
+                </div>
+          
+              </div>
+          
+              <!-- Lista de actividades -->
+              <ul class="list-disc pl-5 text-white mt-4">
+                <li>Development of Landing Pages aimed at clients of different companies with Angular.</li>
+                <li>Development of components and functionalities in React.</li>
+                <li>Development of API endpoints with Node Express.</li>
+                <li>Maintenance and optimization of styles in web applications.</li>
+                <li>Developing AWS Lambdas and using Textract.</li>
+                <li>Incidents resolution.</li>
+              </ul>
+            </div>
+          </div>
+          
+
+          <div class="mb-8 flex flex-col md:flex-row justify-between items-center w-full">
+            <!-- Espacio vacío en dispositivos grandes -->
+            <div class="order-1 w-0 md:w-5/12"></div>
+
+            <!-- Punto de la línea -->
+            <div class="z-10 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full"></div>
+
+            <!-- Contenido -->
+            <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 relative bg-white z-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                <!-- Imagen -->
+                <div class="flex justify-center">
+                 <img class="w-20 md:w-36 max-w-full" src="/assets/netkia-logo.webp" alt="Netkia">
+               </div>
+               <!-- Información de texto -->
+               <div class="flex flex-col items-center md:items-start">
+                  <h2 class="mb-3 font-bold text-black text-xl">NETKIA</h2>
+                  <h5 class="font-bold text-gray-600">12/2020 - 02/2022</h5>
+                  <h5 class="mb-3 font-bold text-gray-600">JUNIOR DEVELOPER</h5>
+               </div>
+             </div>
+              <ul class="list-disc pl-5">
+                <li>Web Layout development (Web applications and Emails).</li>
+                <li>Maintenance and optimization of styles in web pages.</li>
+                <li>Continuous web Application development with Angular.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-8 flex flex-col md:flex-row-reverse justify-between items-center w-full">
+            <div class="order-1 w-0 md:w-5/12"></div>
+            <div class="z-10 flex items-center order-1 bg-black shadow-xl w-8 h-8 rounded-full"></div>
+            <div class="order-1 bg-black rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4 z-20">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+
+                <!-- Imagen -->
+                <div class="flex justify-center ">
+                 <img class="w-20 md:w-36 max-w-full" src="/assets/funiber-logo.webp" alt="Funiber">
+               </div>
+               <!-- Información de texto -->
+               <div class="flex flex-col items-center md:items-start">
+                  <h2 class="mb-3 font-bold text-white text-xl">FUNIBER</h2>
+                  <h5 class="font-bold text-white">09/2016 - 07/2020</h5>
+                  <h5 class="mb-3 font-bold text-white">JUNIOR DEVELOPER - INTERN</h5>
+               </div>
+             </div>
+              <ul class="list-disc pl-5 text-white">
+                <li>Design, development and implementation of web applications to optimize processes or tasks.</li>
+                <li>Maintenance and optimization of code in projects (Vue and React).</li>
+                <li>Capture of requirements of different projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

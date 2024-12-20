@@ -1,0 +1,45 @@
+---
+import './projects.css';
+import Card from '../../components/card.astro';
+//import Boton from '../atoms/Boton.astro';
+---
+
+<section id="Projects" class="projects">
+  <div class="ml-auto mr-auto mt-8 mb-8 flex justify-center items-center">
+    <div class="w-3/4 sm:w-1/2">
+      <h1 class="text-4xl font-bold text-center mb-8">Projects</h1>
+      <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
+        <div class="bg-white rounded-lg shadow-xl overflow-hidden">
+          <div class="h-64 bg-cover flex items-center justify-center">
+            <img src="assets/vuejs-logo.webp" alt="Vuejs">
+          </div>
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-gray-800">Biites</h2>
+            <p class="text-gray-600 mt-2">This project is a solution for food orders from different restaurants in the country of El Salvador. It offers a friendly and easy-to-use user interface, with an attractive and pleasant user experience. The tasks carried out in this project are:</p>
+            <ul class="list-disc pl-5">
+              <li>Monitoring of integration and continuous development.</li>
+              <li>Creation of components, authorization (Login) and routing with Vuejs.</li>
+              <li>CRUD of information contained in the application.</li>
+            </ul>
+            <br>
+            <h2 class="text-2xl font-semibold text-gray-800">Used technologies:</h2>
+            <ul class="list-disc pl-5">
+              <li>Vuejs</li>
+              <li>GraphQL</li>
+              <li>AWS(Lambda)</li>
+              <li>Github Actions</li>
+          </div>
+        </div>
+
+        <!-- Hint de futuros proyectos -->
+        <div class="mt-8 text-center text-gray-500">
+          <p>More projects coming soon! Stay tuned for future updates.</p>
+          <div class="mt-2">
+            <span class="text-sm text-gray-400">More information and projects coming soon in this section.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

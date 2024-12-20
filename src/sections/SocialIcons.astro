@@ -1,0 +1,93 @@
+---
+const {width, height} = Astro.props;
+const socialLinks = [
+	{
+		title: 'LinkedIn',
+		icon: 'logos:linkedin-icon',
+		href: 'https://www.linkedin.com/in/luis-gonzalez-41a93b1b3/',
+
+	},
+	/* {
+		title: 'InfoJobs',
+		icon: 'logos:linkedin-icon',
+		href: 'https://www.infojobs.net/candidate/cv/view/index.xhtml?dgv=14611297477772821913',
+
+	}, */
+	{
+		title: 'Github',
+		icon: 'logos:github-icon',
+		href: 'https://github.com/iluisgonzalez17',
+
+	},
+	/* {
+		title: 'CV',
+		icon: 'tabler:file-cv',
+		href: '../docs/CV-2024-Español.pdf',
+
+	}, */
+];
+---
+
+<div class="icons__container">
+    {
+        socialLinks.map((data) => {
+		
+		if(data.title === 'InfoJobs') {
+			return(
+				<a
+					href={data.href}
+					target="_blank"
+					rel="nofollow noreferrer noopener"
+				>
+					 <img src="assets/infojobs.svg" alt="InfoJobs" width={width}height={height}/>
+
+				</a>
+        	)
+		} else  {
+			return(
+				<a
+					href={data.href}
+					target="_blank"
+					rel="nofollow noreferrer noopener"
+				>
+					<iconify-icon
+						class=`skill__icon ${data.title}`
+						icon={data.icon}
+						width={width}
+						height={height}
+					/>
+				</a>
+        	)
+		}})
+    }
+</div>
+
+<style>
+	.icons__container {
+		display: flex;
+    width: 29.6rem;
+    /* padding: 1.3rem 4rem; */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.skill__icon{
+	color:#000000;
+}
+
+	.LinkedIn:hover{
+		color: #0e76a8;
+	}
+	.Instagram:hover{
+	color: #E1306C;
+	}
+	.Tiwtter:hover{
+	color: #0aa5f6;
+	}
+	.CV:hover{
+		color:#8e64ff;
+	}
+
+
+
+</style>

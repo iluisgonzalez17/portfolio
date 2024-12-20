@@ -1,0 +1,43 @@
+/* General styling */
+.tech-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+  
+  @media (min-width: 640px) {
+    .tech-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .tech-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Carrusel */
+  .animate-infinite-scroll {
+    display: flex;
+    gap: 1rem; /* Espaciado entre logos */
+    animation: scroll 40s linear infinite; /* Animación continua */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Contenedor para que sea responsivo */
+  .technologies .overflow-hidden {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  

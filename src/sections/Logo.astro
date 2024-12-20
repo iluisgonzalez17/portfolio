@@ -1,0 +1,45 @@
+---
+const {name} = Astro.props;
+---
+
+<a href="#" class="profile">
+    <div class="img__container">
+        <img
+            class="header__img"
+            src="/img/luisgonz-logo.svg"
+            alt="luisgonz-img"
+            width="100px"
+            height="100px"
+        />
+    </div>
+    <h3 class="color__gradiente header__title">
+        {name}
+    </h3>
+</a>
+
+<style>
+
+ .img__container {
+	border-radius: 50%;
+	overflow: hidden;
+	transition: 0.35s transform;
+}
+
+ .img__container:hover {
+	transform: scale(1.1);
+}
+
+ .profile {
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) { 
+    .header__title {
+        display: none;
+    }
+}
+
+
+</style>
