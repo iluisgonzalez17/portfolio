@@ -3,6 +3,8 @@ import './header.css';
 const { origin } = Astro.props;
 import Logo from '../Logo.astro';
 
+import SocialIcons from '../SocialIcons.astro';
+
 const mainMenu = [
 	 {link:"#Technologies", content:"Technologies", icon:"octicon:dependabot-24"},
 	 {link:"#Experience", content:"Experience", icon:"octicon:briefcase-24"},
@@ -16,7 +18,7 @@ const mainMenu = [
 	<div class="header__container">
 		<Logo name="Luis González"/>
 		<nav class="links"   tabindex="0.1">
-			<button class="menu__btn" ><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
+			<!-- <button class="menu__btn" ><iconify-icon icon="mingcute:menu-fill"></iconify-icon></button>
 			<ul class="header__list">
 				{
 					mainMenu.map((data) => (
@@ -36,7 +38,8 @@ const mainMenu = [
 						</li>
 					))
 				}
-			</ul>
+			</ul> -->
+			<SocialIcons class="items-center" width="48" height="48" />
 		</nav>
 	</div>
 </header>

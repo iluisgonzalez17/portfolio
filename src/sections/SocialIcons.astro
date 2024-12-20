@@ -5,6 +5,7 @@ const socialLinks = [
 		title: 'LinkedIn',
 		icon: 'logos:linkedin-icon',
 		href: 'https://www.linkedin.com/in/luis-gonzalez-41a93b1b3/',
+		alt: 'LinkedIn-luisgonz'
 
 	},
 	/* {
@@ -17,6 +18,7 @@ const socialLinks = [
 		title: 'Github',
 		icon: 'logos:github-icon',
 		href: 'https://github.com/iluisgonzalez17',
+		alt: 'Github-luisgonz'
 
 	},
 	/* {
@@ -55,6 +57,8 @@ const socialLinks = [
 						icon={data.icon}
 						width={width}
 						height={height}
+						alt={data.alt}
+						aria-label={data.alt}
 					/>
 				</a>
         	)
@@ -68,7 +72,7 @@ const socialLinks = [
     width: 29.6rem;
     /* padding: 1.3rem 4rem; */
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
 }
 .skill__icon{
