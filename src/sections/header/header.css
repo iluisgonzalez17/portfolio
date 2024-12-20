@@ -6,7 +6,7 @@
 	align-items: center;
 	color: var(--on-primary);
 	position: fixed;
-	z-index: 20;
+	z-index: 40;
 }
 
 .header .header__container {
